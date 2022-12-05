@@ -94,22 +94,22 @@ public class matrix_database {
                     scan.nextLine();
 
                     //вводим с клавиатуры
-                    System.out.println("Введите количество строк в первой матрице: ");
+                    System.out.println("\nКоличество строк в первой матрице: ");
                     int y1 = scan.nextInt();
-                    System.out.println("Введите количество столбцов в первой матрице: ");
+                    System.out.println("Количество столбцов в первой матрице: ");
                     int x1 = scan.nextInt();
-                    System.out.println("Введите количество строк во второй матрице: ");
+                    System.out.println("Количество строк во второй матрице: ");
                     int y2 = scan.nextInt();
-                    System.out.println("Введите количество столбцов во второй матрице: ");
+                    System.out.println("Количество столбцов во второй матрице: ");
                     int x2 = scan.nextInt();
-                    System.out.println("Введите степень: ");
+                    System.out.println("\nСтепень для возведения матриц: ");
                     int step = scan.nextInt();
 
                     if(x1 == y2) {
                         a = new int[y1][x1];
                         b = new int[y2][x2];
 
-                        System.out.println("Введите первую матрицу: ");
+                        System.out.println("\nВведите первую матрицу: ");
                         for(int i = 0; i < y1; i++) {
                             for(int j = 0; j < x1; j++) {
                                 a[i][j] = scan.nextInt();
@@ -118,7 +118,7 @@ public class matrix_database {
 
 
 
-                        System.out.println("Введите вторую матрицу: ");
+                        System.out.println("\nВведите вторую матрицу: ");
                         for(int i = 0; i < y2; i++) {
                             for(int j = 0; j < x2; j++) {
                                 b[i][j] = scan.nextInt();
@@ -211,7 +211,7 @@ public class matrix_database {
                     //ResultSet - ОБЪЕКТ java, содержащий результаты выполнения sql запросов
                     //executeQuery - МЕТОД ОБЪЕКТА ResultSet
                     ResultSet rs2 = stmt3.executeQuery("SELECT * FROM " + tablename + "");
-                    System.out.println("Введенные данные: ");
+                    System.out.println("\nВведенные данные: ");
 
                     //ОБЪЕКТ Statement для выполнения sql запросов
                     //МЕТОД createStatement ОБЪЕКТА PreparedStatement
