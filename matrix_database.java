@@ -171,9 +171,6 @@ public class matrix_database {
                         }
                     }
 
-
-                    scan.nextLine();
-
                     //задаем запрос ЗАПОЛНЕНИЯ, как строку
                     String query2 = "INSERT INTO " + tablename +
                             " (матрица_1, матрица_2, произведние, сумма, разность, степень)"
